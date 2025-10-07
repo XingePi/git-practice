@@ -4,6 +4,7 @@ subset_data <- subset(data, date >= "2020-07-01" & date <= "2020-12-31")
 ggplot(subset_data, aes(x = date, y = hospital_beds)) +
 	geom_line(color = "red", size = 1) +
 	geom_point(color = "blue", size = 1.5) +
-	labs(title = "the number of hospital beds needed between July and December of 2020", x = "Month", y = "hospital beds needed(red line)") + 
+	labs(title = "the number of hospital beds needed between July and December of 2020", x = "Month", y = "hospital beds needed(red line)") +
+	scale_y_log10() + 
 	theme_minimal(base_size = 13)
 
