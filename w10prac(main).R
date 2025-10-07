@@ -7,5 +7,10 @@ ggplot(subset_data, aes(x = date)) +
 	geom_line(y = dead, color = "yellow", size = 1) +
 	geom_point(color = "blue", size = 1.5) +
 	labs(title = "the number of hospital beds needed between July and December of 2020", x = "Month", y = "hospital beds needed(red line)") +
-	scale_y_sqrt() 
+<<<<<<< HEAD
+	scale_y_log10() + 
+=======
+	scale_y_sqrt() + 
+>>>>>>> v1
+	theme_minimal(base_size = 13)
 
